@@ -1,0 +1,52 @@
+/* Feature Section */
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.feature-card {
+  background: #e0e0e0;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 2rem;
+  flex: 1;
+  max-width: 300px;
+  margin: 1rem;
+}
+
+.feature-card a{
+ text-decoration: none ;
+ list-style: none;
+}
+.feature-card h3 {
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  margin-bottom: 10px;
+
+
+}
+
+.feature-card img {
+  width: 60px;
+  margin-bottom: 1rem;
+}
+
+.image
+{
+height:18.9px;
+width:18.9px;
+margin-bottom: 8px;
+vertical-align: middle;
+}
+
+
+
+

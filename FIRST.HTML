@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ethiopian Passport Services</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="STYLE3.css">
+    <style>
+        /* Global styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #0047AB;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem 2rem;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            margin-bottom: 30px;
+        }
+
+        nav .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        /* Navigation Links - Second Part */
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            flex: 1;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .menu-toggle {
+            display: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: white;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            nav {
+                padding: 1rem;
+            }
+
+            nav .logo {
+                font-size: 1.2rem;
+            }
+
+            nav ul {
+                display: none;
+                flex-direction: column;
+                background-color: #0047AB;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                padding: 1rem 0;
+            }
+
+            nav ul.show {
+                display: flex;
+            }
+
+            .menu-toggle {
+                display: block;
+                margin-left: auto;
+            }
+        }
+
+       
+        
+
+       
+        
+
+        /* Content Section */
+        
+
+
+        .content {
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.content h2 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.video-container {
+    width: 50%; /* Restrict video width */
+    max-width: 600px;
+    margin: 1rem auto; /* Center the video */
+    position: relative;
+    padding-bottom: 35.5%; /* Maintain 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    border-radius: 8px; /* Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for aesthetics */
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none; /* Remove default iframe border */
+}
+
+
+
+
+
+
+       /* Footer */
+
+
+
+.line
+{
+    text-align: center ;
+    font-size: 32px;
+    font-weight: 500;
+    font-family: Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+        /* Footer */
+footer {
+    background-color: #002D62;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 2rem;
+    margin-top: 3rem;
+}
+
+footer p {
+    font-size: 1rem;
+    margin: 0.5rem 0; /* Add spacing between lines */
+}
+
+footer a {
+    color: #FFD700; /* Highlight email link with a gold color */
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+        
+
+
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">Ethiopian Passport Services</div>
+        <span class="menu-toggle" onclick="toggleMenu()">&#9776;</span>
+        <div class="nav-links">
+            <ul id="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Requirements</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+   
+
+    <!-- Feature Section -->
+    <section class="features">
+        <div class="feature-card">
+            <img  class="image" src="pic/new passport 1-01.fb0e7fca.svg" alt="Icon">
+            <a href="start-application.html"><h3>Start New Application</h3></a>
+            <p>Apply for your Ethiopian passport with all the necessary information.</p>
+        </div>
+        <div class="feature-card">
+            <img class="image" src="pic/new passport 1-01.fb0e7fca.svg" alt="Icon">
+            <a href="register.html"><h3>REGISTER</h3></a>
+            <p>Register now for a smoother experience with future applications.</p>
+        </div>
+        <div class="feature-card">
+            <img class="image" src="pic/new passport 1-01.fb0e7fca (1).svg" alt="Icon">
+            <a href="check-status.html"><h3>Check Status</h3></a>
+            <p>Track your application status using your unique tracking number.</p>
+        </div>
+    </section>
+
+
+
+
+<div class="line">
+    <h3>How To Apply for Passport</h3>
+</div>
+
+
+
+    <div class="carousel-container">
+        <div class="carousel-track">
+          <!-- First group -->
+          <div class="carousel-group">
+            <div class="card">
+              <img src="pic/How to apply.2b8287be.jpg" alt="New Passport">
+             <a href="#"><h3>New Passport</h3></a> 
+              <p>Applicants must fulfill the following requirements.</p>
+            </div>
+            <div class="card">
+              <img src="pic/expired passport.a252f9ba.jpg" alt="Expired Passport">
+              <a href="#"><h3>Expired Passport</h3></a>
+              <p>Applicants must fulfill the following requirements.</p>
+            </div>
+            <div class="card">
+              <img src="pic/Passport Page Runout.25be457a.jpg" alt="Passport Pages Run Out">
+              <a href="#"><h3>Passport Pages Run Out</h3></a>
+              <p>Applicants must fulfill the following requirements.</p>
+            </div>
+            <div class="card">
+              <img src="pic/Damaged.1e26e102.jpg" alt="Damaged Passport">
+              <a href="#"><h3>Damaged Passport</h3></a>
+              <p>Applicants must fulfill the following requirements.</p>
+            </div>
+          </div>
+          <!-- Second group -->
+          <div class="carousel-group">
+            <div class="card">
+              <img src="pic/lost.0038d77b.jpg" alt="Lost/Stolen Passport">
+              <a href="#"><h3>Lost/Stolen Passport</h3></a>
+              <p>Applicants must fulfill the following requirements.</p>
+            </div>
+            <div class="card">
+              <img src="pic/DATA CORRECTION.307bfe4e.jpg" alt="Change of Passport Data">
+              <a href="#"><h3>Change of Passport Data</h3></a>
+              <p>Applicants must fulfill the following requirements.</p>
+            </div>
+            <div class="card">
+              <img src="pic/Urgent passport.bca2d3ee (1).jpg" alt="Urgent Service">
+              <a href="#"><h3>Urgent Service</h3></a>
+              <p>Applicants must fulfill the following requirements.</p>
+            </div>
+            <div class="card">
+              <img src="pic/oid.4f129cd3.jpg" alt="Origin ID">
+             <a href="#"><h3>Origin ID/Yellow Card</h3></a> 
+              <p>Applicants must fulfill the following requirements.</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-indicators">
+          <div class="indicator active" data-index="0"></div>
+          <div class="indicator" data-index="1"></div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+    <section class="before-apply">
+        <div class="image-container">
+            <img src="pic/INVEA_How_to_apply.048c4bfb.jpg" alt="Image Description">
+        </div>
+        <div class="text-container">
+            <h2>BEFORE YOU APPLY</h2>
+            <ul>
+                <li>All applicants should secure an online appointment when applying for a passport</li>
+                <li>Confirmed appointment is required</li>
+                <li>Applicants are reminded to be on site not earlier than 30 minutes on their selected date and time of appointment at their chosen consular office.</li>
+                <li>Personal appearance is required for new applicants.</li>
+                <li>Please be warned that dealing with fixers (illegal arrangements) is at your own risk and expense.</li>
+                <li>Prepare all the originals and photocopies of the documentary requirements for passport application.</li>
+            </ul>
+        </div>
+      </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <section class="content">
+        <h2>About Us</h2>
+        <p>We provide fast, secure, and streamlined passport services for Ethiopian citizens.</p>
+    
+        <h2>Featured Video</h2>
+        <div class="video-container">
+            <iframe 
+                src="https://www.youtube.com/embed/poFSKSjssXg" 
+                title="How to Apply Passport Online" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen>
+            </iframe>
+        </div>
+    </section>
+    
+
+    
+    
+
+
+      <script>
+        const track = document.querySelector('.carousel-track');
+        const indicators = document.querySelectorAll('.indicator');
+        let currentIndex = 0;
+    
+        function updateCarousel(index) {
+          track.style.transform = `translateX(-${index * 100}%)`;
+          indicators.forEach((indicator, i) => {
+            indicator.classList.toggle('active', i === index);
+          });
+          currentIndex = index;
+        }
+    
+        indicators.forEach((indicator) => {
+          indicator.addEventListener('click', () => {
+            const index = parseInt(indicator.getAttribute('data-index'));
+            updateCarousel(index);
+          });
+        });
+    
+        setInterval(() => {
+          const nextIndex = (currentIndex + 1) % indicators.length;
+          updateCarousel(nextIndex);
+        }, 5000);
+      </script>
+
+
+    
+
+
+
+
+<footer>
+  <p>Contact Us</p>
+  <p>Addis Ababa, Ethiopia</p>
+  <p>
+      <span class="icon">&#9742;</span> 8133 FREE CALL
+  </p>
+  <p>
+      <span class="icon">&#9993;</span> 
+      <a href="mailto:support@ethiopianpassportservices.gov.et">support@ethiopianpassportservices.gov.et</a>
+  </p>
+  <p>&copy; 2025 Ethiopian Passport Services. All rights reserved.</p>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+
